@@ -3,11 +3,11 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container: {
         width: '100%',
-        height: 180,
+        height: "22%",
         flexDirection: 'row',
         paddingHorizontal: 18,
         justifyContent: 'space-between',
-        marginTop: 22,
+        marginTop: "6%",
     },
     box: {
         backgroundColor: '#383838',

@@ -2,22 +2,30 @@ import React, { useState } from "react";
 import { View, Text, TouchableOpacity } from "react-native"; 
 import { styles } from "./styles";
 
-export function Buttons() {
-    const [weight, setWeight] = useState(65);
+export function Buttons({ weight, setWeight }) {
     const [age, setAge] = useState(18)
 
     function handleAddValue() {
-        setWeight(weight+1);
+        if(weight < 200) {
+            setWeight(weight+1);
+        }
     }
     function handleMinusValue() {
-        setWeight(weight-1);
+        if(weight > 20) {
+            setWeight(weight-1);
+        }
     }
 
     function handleAddAge() {
-        setAge(age+1);
+        if(age < 100) {
+            setAge(age+1);
+        }
+        
     }
     function handleMinusAge() {
-        setAge(age-1);
+        if(age > 1) {
+            setAge(age-1);
+        }
     }
 
     return (

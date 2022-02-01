@@ -3,8 +3,7 @@ import { View, Text } from "react-native";
 import { styles } from "./styles";
 import Slider from '@react-native-community/slider';
 
-export function Height() {
-    const [height, setHeight] = useState(170);
+export function Height({height, setHeight}) {
 
     function handleChangeHeight(value) {
         setHeight(value);
@@ -17,8 +16,8 @@ export function Height() {
             
             <Slider
                 style={{width: 230}}
-                minimumValue={100}
-                maximumValue={230}
+                minimumValue={140}
+                maximumValue={210}
                 minimumTrackTintColor="#41A3E3"
                 maximumTrackTintColor="#0B225B"
                 onValueChange={value => handleChangeHeight(parseInt(value))}

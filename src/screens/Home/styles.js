@@ -6,9 +6,9 @@ export const styles = StyleSheet.create({
         backgroundColor: "#232323"
     },
     btn: {
-        marginTop: 24,
+        marginTop: "6%",
         width: '100%',
-        height: 80,
+        height: "10%",
         backgroundColor: "#41A3E3",
         alignItems: 'center',
         justifyContent: 'center',

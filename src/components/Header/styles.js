@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     container: {
         width: '100%',
         marginTop: getStatusBarHeight(),
-        height: 55,
+        height: "7%",
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#383838',
