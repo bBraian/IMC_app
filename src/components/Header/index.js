@@ -14,7 +14,7 @@ export function Header({text, btnBack}) {
     return (
         <View style={[styles.container, {
             flexDirection: 'row',
-            justifyContent: 'space-evenly'
+            justifyContent: btnBack?'space-evenly':'center'
         }]}>
             { 
             btnBack?
